@@ -8,6 +8,8 @@ $et = $_POST['endTime'];
 
 include("dbcon.php");
 
+#memberID 13 and CourtID 15 did not work beacuse the IDs dont exist.
+
 $sql = "insert into booking(memberid,courtid,bookingDate,starttime,endtime) values ('$mid','$cid','$bd','$st','$et')";
 
 // echo $sql;
